@@ -22,7 +22,7 @@ const MessageShema : Schema <Message> = new Schema({
 })
 
 export interface User extends Document {
-    userName:string;
+    username:string;
     email:string;
     password:string;
     verifyCode:string;
@@ -33,7 +33,7 @@ export interface User extends Document {
 }
 
 const UserSchema : Schema<User> = new Schema({
-    userName:{
+    username:{
         type:String,
         required:[true,"username is required"],
         trim:true,
